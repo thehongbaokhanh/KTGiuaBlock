@@ -1,19 +1,19 @@
 package com.example.demo.OOP;
 
-public class classroom {
+public class Classroom {
     String name;
     int idStudent;
     double averageScore;
     int status;
 
-    public classroom(String name, int idStudent, double averageScore, int status) {
+    public Classroom(String name, int idStudent, double averageScore, int status) {
         this.name = name;
         this.idStudent = idStudent;
         this.averageScore = averageScore;
         this.status = status;
     }
 
-    public classroom() {
+    public Classroom() {
     }
 
     public String getName() {

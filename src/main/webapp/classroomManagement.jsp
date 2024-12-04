@@ -1,6 +1,6 @@
-<%@ page import="com.example.demo.OOP.classroom" %>
 <%@ page import="java.util.ArrayList" %>
 <%@ page import="java.util.List" %>
+<%@ page import="com.example.demo.OOP.Classroom" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -9,10 +9,10 @@
 <body>
 <h1>Classroom Management</h1>
 
-<% List<classroom> classrooms = new ArrayList<>();
-    classrooms.add(new classroom("Classroom 1", 1, 5.0, 1));
-    classrooms.add(new classroom("Classroom 1", 2, 6.0, 2));
-    classrooms.add(new classroom("Classroom 1", 3, 7.0, 2));
+<% List<Classroom> classrooms = new ArrayList<>();
+    classrooms.add(new Classroom("Classroom 1", 1, 5.0, 1));
+    classrooms.add(new Classroom("Classroom 1", 2, 6.0, 2));
+    classrooms.add(new Classroom("Classroom 1", 3, 7.0, 2));
     request.setAttribute("classrooms", classrooms);
 %>
 
@@ -24,7 +24,7 @@
         <th>Status</th>
     </tr>
     <%
-        for (classroom classroom : classrooms) {
+        for (Classroom classroom : classrooms) {
     %>
     <%
             if (classroom.getStatus() == 1) {
